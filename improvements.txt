@@ -1,0 +1,13 @@
+Current
+1) 
+
+
+Future
+1) Change displayed dex info based on the Pokemon's selected form
+    - Fetch the correct artwork somehow
+
+2) Flavor text entries for different Pokemon forms
+
+3) Flavor text entries from different games for the same Pokemon form
+
+4) Store data in Mongo database?

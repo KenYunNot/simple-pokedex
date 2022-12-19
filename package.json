@@ -1,0 +1,16 @@
+{
+  "name": "pokemongui",
+  "version": "1.0.0",
+  "description": "Application to display some Pokemon information",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ken Yun",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.1.3",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6"
+  }
+}

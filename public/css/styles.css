@@ -1,0 +1,64 @@
+* {
+    font-family: "Trebuchet MS";
+}
+
+div#dex-info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+div#dex-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+
+input#search-input {
+    font-size: 15px;
+}
+
+select#forms-list {
+    width: 1.5in;
+    padding: 5px 0 5px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+span.convert-tooltip:hover {
+    cursor: pointer;
+}
+
+span.convert-tooltip:hover::after {
+    content: "Click to convert!";
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    min-width: 50px;
+    border: 1px #aaaaaa solid;
+    background-color: #ffffcc;
+    padding: 5px;
+    color: #000000;
+    font-size: 12px;
+    opacity: 92%;
+}
+
+td#description {
+    font-style: italic;
+}
+
+
+@media (max-width: 800px) {
+    #dex-info-container {
+        flex-direction: column;
+    }
+
+    #dex-info {
+        width: 60%;
+    }
+}

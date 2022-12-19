@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Simple Pokedex</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="public/css/styles.css">
+    </head>
+    <body>
+        <h1>Simple Pokedex</h1>
+        <main>
+            <p>Enter the name of a Pokemon or its National Pokedex number and we will return some basic details about the Pokemon.</p>
+            <form action="pokemon" method="POST">
+                <label for="search-input">Search for a Pokemon: </label>
+                <input type="text", name="searchPokemon", id="search-input">
+                <button type="submit">Search</button>
+            </form>
+        </main>
+    </body>
+</html>

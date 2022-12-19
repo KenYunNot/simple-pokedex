@@ -1,0 +1,38 @@
+<h2 id="search-pokemon">Results for "{{searchPokemon}}"</h2>
+<main>
+    <div id="dex-info-container">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/{{pokedexNum}}.png">
+        <div id="dex-info">
+            <select id="forms-list">
+                {{#each formNames}}
+                <option value="{{this.value}}">{{this.name}}</option>
+                {{/each}}
+            </select>
+            <table>
+                <tr>
+                    <th colspan="2">{{genus}}</td>
+                </tr>
+                <tr>
+                    <th>Types</th>
+                    <td>
+                        {{#each types}}
+                        <span>{{this}}</span>
+                        {{/each}}
+                    </td>
+                </tr>
+                <tr>
+                    <th class="measurements"><span class="convert-tooltip">Height</span></th>
+                    <td id="height">{{height}} m</td>
+                </tr>
+                <tr>
+                    <th class="measurements"><span class="convert-tooltip">Weight</span></th>
+                    <td id="weight">{{weight}} kg</td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="description">{{description}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="public/js/main.js"></script>
+</main>
