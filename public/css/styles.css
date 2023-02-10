@@ -13,7 +13,8 @@ div#dex-info {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 40%;
+    max-width: 500px;
+    padding-left: 50px;
 }
 
 input#search-input {
@@ -50,6 +51,23 @@ span.convert-tooltip:hover::after {
 
 td#description {
     font-style: italic;
+}
+
+div#search-again {
+    display: flex;
+    justify-content: center;
+}
+
+a#search-again-link {
+    padding: 7px 12px;
+    text-decoration: none;
+    background-color: rgb(74, 138, 74);
+    color: white;
+    border-radius: 5px;
+}
+
+a#search-again-link:hover {
+    background-color:rgb(97, 187, 97)
 }
 
 
